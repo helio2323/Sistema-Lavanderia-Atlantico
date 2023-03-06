@@ -57,7 +57,7 @@ End Sub
 
 Public Sub testExport()
     Dim proj_name As String
-    proj_name = "VbaDeveloper"
+    proj_name = "vbaProject"
 
     Dim vbaProject As Object
     Set vbaProject = Application.VBE.VBProjects(proj_name)

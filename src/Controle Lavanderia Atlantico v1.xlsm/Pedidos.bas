@@ -217,7 +217,7 @@ For i = 1 To Tabela_Servicos.Rows.Count
     wa.Pagamento.AddItem "Pago"
     
     wa.Modelo.AddItem "Entrega"
-    wa.Modelo.AddItem "Retirada"
+    wa.Modelo.AddItem "Levantamento"
 
 wa.Unidade.Value = ""
 wa.Valor.Value = ""
@@ -528,6 +528,8 @@ Sheets("BD_Pedidos").Select
 
 Resp = MsgBox("Permanecer na tela de pedido para imprimir o cupom? ", vbYesNo, "Atenção")
     
+Salva_Plan
+    
 If Resp = vbYes Then
     
     ped = converterNumero(ped)
@@ -717,7 +719,7 @@ For i = 1 To Tb_Resumo_.Rows.Count
 Next i
 
 
-
+Salva_Plan
 
 Call Cumpom_Fiscal
 Application.ScreenUpdating = False
@@ -860,8 +862,8 @@ Contador = 1
     Range("D11") = "Nº " & wa.N_Pedido
     Range("B9") = wa.Nome
     Range("C7") = wa.Telefone
-    Range("C22") = Planilha14.Cells(1, 22)
-    Range("C23") = Planilha14.Cells(1, 23)
+    'Range("C22") = Planilha14.Cells(1, 22)
+    'Range("C23") = Planilha14.Cells(1, 23)
     Range("B12") = wa.Modelo
     'Range("C27") = wa.Documento
       

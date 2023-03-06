@@ -1,4 +1,11 @@
 Attribute VB_Name = "Adicionais"
+Sub Salva_Plan()
+    
+    ActiveWorkbook.Save
+    
+    Toast "Documento Salvo", "Sua planilha foi salva", 1
+
+End Sub
 Sub Cli()
 
    Clientes.Show
