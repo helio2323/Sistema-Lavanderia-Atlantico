@@ -18,6 +18,8 @@ Sub import_situacao()
         PesqTb.Delete
     Next
     
+    Salva_Plan
+    
     
     Url = "Url;" & "https://docs.google.com/spreadsheets/d/e/2PACX-1vRwhQoQohIGvYuka6fAiaIw-HoQup4jROGI7POumrx3P3ry08V3n2hm5vlKfaSeks4Agfbtnd0HVUqA/pubhtml"
     Set PesqTb = plan_ativacao.QueryTables.Add(Url, plan_ativacao.Range("A5"))
@@ -46,6 +48,8 @@ trata_erro:
     
     MsgBox "Ocorreu um erro na validação da planilha!" & vbNewLine & "Verifique sua conexão com a internet", vbCritical, "Organic Sheets"
     'ThisWorkbook.Close SaveChanges:=False
+    
+    
     
 End Sub
 

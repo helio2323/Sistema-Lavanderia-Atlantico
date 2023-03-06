@@ -100,7 +100,7 @@ With Acom
     .Cb_Pagamento.Clear
     
     .Cb_Status.AddItem "Em Andamento"
-    .Cb_Status.AddItem "Aguardando Retirada"
+    .Cb_Status.AddItem "Aguardando Levantamento"
     .Cb_Status.AddItem "Entregue"
     
     For i = 1 To wf.Range("Funcionarios").Rows.Count

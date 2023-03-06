@@ -26,8 +26,7 @@ Call DesbloquearAbasComSenha
 Call BloquearAbasComSenha
 
 Range("e1").Select
-
-Acompanhamento.Select
+Planilha6.Select
 
 'Application.ScreenUpdating = True
 
@@ -145,6 +144,11 @@ Sub Resolu()
     If cxScreen = 1024 Then
         ActiveWindow.Zoom = 70
     End If
+    
+    If ActiveSheet.name = "Pedido_Novo" Then
+        ActiveWindow.Zoom = 80
+    End If
+    
 
 End Sub
 
